@@ -1,6 +1,6 @@
 # JSON::Schema::Corvus as released to CPAN (src-perl/JSON-Schema-Corvus in Corvus.JsonSchema): its version is this tag,
 # which Dependabot keeps up to date.
-FROM ghcr.io/corvus-dotnet/corvus-json-schema-perl:0.1.0 AS dist
+FROM ghcr.io/corvus-dotnet/corvus-json-schema-perl:0.1.2 AS dist
 
 FROM perl:5.44.0-slim
 COPY --from=dist /corvus-json-schema /tmp/dist
